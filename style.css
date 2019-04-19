@@ -1,0 +1,86 @@
+/* Globals */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Blocks */
+
+.container {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 60px auto;
+	grid-row-gap: 20px;
+}
+
+.navbar {
+	font-size: 1.999em;
+	grid-column: 1/-1;
+	background: teal;
+	color: white;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+	padding: 10px 25px;
+	display: flex;
+}
+
+.sidebar-left,
+.sidebar-right {
+	padding: 0 25px;
+}
+
+/* Elements */
+
+.navbar__title {
+	align-self: center;
+}
+
+.post__title {
+	font-size: 3.998rem;
+	font-weight: 100;
+	padding: 0 0 25px;
+}
+
+.post__image img {
+	width: 100%;
+}
+
+.post__content > p {
+	padding-top: 25px;
+	line-height: 1.45;
+}
+
+.post__content > p:last-child {
+	padding-bottom: 100px;
+}
+
+.sidebar-left > ul > li {
+	border-bottom: 1px solid teal;
+	padding: 10px;
+}
+
+.sidebar-right > ul > li {
+	background-color: #f7ffff;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+	padding: 10px;
+	margin-bottom: 25px;
+	height: 100px;
+	display: flex;
+}
+
+.sidebar-right > ul > li > p {
+	font-size: 1.25rem;
+	margin: 0 auto;
+	align-self: center;
+}
