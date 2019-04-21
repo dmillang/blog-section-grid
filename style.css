@@ -20,7 +20,7 @@ time, mark, audio, video {
 .container {
 	display: grid;
 	height: 100%;
-	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-columns: fit-content(200px) 3fr 1fr;
 	grid-template-rows: 60px auto;
 	grid-row-gap: 20px;
 }
@@ -54,6 +54,7 @@ time, mark, audio, video {
 
 .post__image img {
 	width: 100%;
+	height: auto;
 }
 
 .post__content > p {
@@ -83,4 +84,48 @@ time, mark, audio, video {
 	font-size: 1.25rem;
 	margin: 0 auto;
 	align-self: center;
+}
+
+@media all and (max-width: 1200px) {
+	.sidebar-right {
+		grid-column: 1/-1;
+	}
+	.content-area {
+		grid-column: 2/-1;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+}
+
+@media all and (max-width: 998px) {
+
+	.sidebar-left,
+	.sidebar-right,
+	.content-area {
+		grid-column: 1/-1;
+	}
+
+	.sidebar-left {
+		grid-row: 3/4;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		font-size: 1.2rem;
+	}
+
+	.post__title {
+		font-size: 2rem;
+	}
+
+	.sidebar-left,
+	.sidebar-right,
+	.content-area {
+		grid-column: 1/-1;
+	}
+
+	.sidebar-left {
+		grid-row: 3/4;
+	}
 }
