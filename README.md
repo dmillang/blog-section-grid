@@ -1,5 +1,5 @@
 # CSS Grid Feature Section
-This is a simple Blog post layout with a nav, two sidebars, content with header, image and copy.
+This is a responsive Blog post layout with a nav, two sidebars, content with header, image and copy.
 
 * Includes
     * display: grid
@@ -8,4 +8,5 @@ This is a simple Blog post layout with a nav, two sidebars, content with header,
     * grid-gap (parent property)
     * grid-column (child property)
     * grid-row (child property)
+    * Sidebars are moved below main section on small screens
 
